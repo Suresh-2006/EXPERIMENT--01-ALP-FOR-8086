@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-#### Name : Suresh S
-#### Roll no : 212223040215
-#### Date of experiment : 18-08-2025
+### Name : Suresh S
+### Roll no : 212223040215
+### Date of experiment : 18-08-2025
 
 
 
@@ -77,57 +77,123 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Programs for arithmetic  operations
 
-## Addition  of 8 bit ALP 
+## Addition  of 8 bit ALP (Register Mode)
 ```
-mov ax,5d89h
-mov bx,2521h 
+mov al,89h
+mov bl,21h 
 
-add ax,bx
+add al,bl
 ret       
 ```
 
 
 
 ## Output  
-<img width="1920" height="1080" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/1cb4ada7-0b7f-42d3-8532-13ae61d6c601" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/38cabc8a-c0ea-46bb-be3e-38df05e5e47e" />
 
-## Subtraction   of 8 bit numbers  ALP 
-```
-mov ax,5d89h
-mov bx,2521h 
 
-sub ax,bx
-ret       
+## Subtraction  of 8 bit numbers  ALP (Immediate Mode) 
+```    
+mov al,89h
+
+sub al,21h
+ret      
 ```
 ## Output
-<img width="1920" height="1080" alt="Screenshot (30)" src="https://github.com/user-attachments/assets/fd83cef1-13ce-4320-b385-6e4106ac6a4f" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e4c2b780-eb0c-4142-aa8d-3a9de8472be9" />
+>
 
-## Multiplication alp 
+## Multiplication alp  (Direct Memory Mode)
 ```
-mov ax,5d89h
-mov bx,2521h 
+NUM DW 2521h
 
-mul bx
+MOV AX, 5D89h
+
+MUL NUM       
 ret       
 ```
  ## Output  
-<img width="1920" height="1080" alt="Screenshot (34)" src="https://github.com/user-attachments/assets/d75da3ea-0b4f-469f-81a6-4c2d473c6951" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5532dd7f-25dc-463d-b3e6-220727cdc435" />
 
 
-## Division alp 
+
+
+## Division alp (Register Indirect Mode)
 ```
-mov ax,5d89h
-mov bx,2521h 
+NUM DW 5D89h    
 
-div ax
-ret       
+MOV BX, OFFSET NUM
+MOV AX, 2521h
+
+DIV WORD PTR [BX]
+ret     
 ```
 ## Output  
-<img width="1920" height="1080" alt="Screenshot (38)" src="https://github.com/user-attachments/assets/f9f2c525-f8f8-4eb3-9b0c-9f8218db27ef" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1cf2d621-8a98-4227-b30f-5a62fa7fcd3a" />
+
+
+## AND  of 8 bit ALP (Register Mode)
+```
+mov al,89h
+mov bl,21h 
+
+AND al,bl
+ret       
+```
+
+
+
+## Output  
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b73c628c-bbd4-4740-8cfd-0f32877bc83e" />
+
+## OR  of 8 bit ALP (Register Mode)
+```
+mov al,89h
+mov bl,21h 
+
+OR al,bl
+ret       
+```
+
+
+
+## Output  
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/539442e2-8625-425b-8ba8-becffe2ce9ac" />
+
+
+## NOT  of 8 bit ALP (Register Mode)
+```
+mov al,89h
+
+NOT al
+ret      
+```
+
+
+
+## Output  
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c6b6b3a5-2826-41dd-bb77-48602d2dcc1d" />
+
+
+## XOR  of 8 bit ALP (Register Mode)
+```
+mov al,89h
+mov bl,21h 
+
+XOR al,bl
+ret     
+```
+
+
+
+## Output  
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/72affe11-bcab-499c-8e24-22cec6241168" />
+
 
 
 ## Result :
- 
+
+The execution of ALP on fundamental arithmetic and logical operations is successfully completed.
 
 
 
