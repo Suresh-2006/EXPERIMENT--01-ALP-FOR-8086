@@ -133,7 +133,7 @@ ret
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1cf2d621-8a98-4227-b30f-5a62fa7fcd3a" />
 
 
-## AND  of 8 bit ALP (Register Mode)
+## AND  of 16 bit ALP (Register Mode)
 ```
 mov ax,5d89h
 mov bx,2521h  
@@ -148,7 +148,7 @@ ret
 <img width="1920" height="1080" alt="Screenshot (55)" src="https://github.com/user-attachments/assets/ee606f9d-56a0-42d8-bf7b-7491e3d7addc" />
 
 
-## OR  of 8 bit ALP (Register Mode)
+## OR  of 16 bit ALP (Register Mode)
 ```
  mov ax,5d89h
  mov bx,2521h 
@@ -164,7 +164,7 @@ ret
 <img width="1920" height="1080" alt="Screenshot (56)" src="https://github.com/user-attachments/assets/df71e324-7fd7-4d73-9c54-7acc26a9bfc8" />
 
 
-## NOT  of 8 bit ALP (Register Mode)
+## NOT  of 16 bit ALP (Register Mode)
 ```
 mov ax,5d89h
 
@@ -179,7 +179,7 @@ ret
 
 
 
-## XOR  of 8 bit ALP (Register Mode)
+## XOR  of 16 bit ALP (Register Mode)
 ```
 mov ax,5d89h
 mov bx,2521h 
