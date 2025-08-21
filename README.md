@@ -77,31 +77,32 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Programs for arithmetic  operations
 
-## Addition  of 8 bit ALP (Register Mode)
+## Addition  of 16 bit ALP (Register Mode)
 ```
-mov al,89h
-mov bl,21h 
+mov ax,5d89h
+mov bx,2521h 
 
-add al,bl
+add ax,bx
 ret       
 ```
 
 
 
 ## Output  
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/38cabc8a-c0ea-46bb-be3e-38df05e5e47e" />
+
+<img width="1920" height="1080" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/00952bba-1acf-4fe6-bd90-13be75a89e17" />
 
 
-## Subtraction  of 8 bit numbers  ALP (Immediate Mode) 
+## Subtraction  of 16 bit numbers  ALP (Immediate Mode) 
 ```    
-mov al,89h
+mov ax,5d89h
 
-sub al,21h
+sub ax,2521h
 ret      
 ```
 ## Output
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e4c2b780-eb0c-4142-aa8d-3a9de8472be9" />
->
+<img width="1920" height="1080" alt="Screenshot (54)" src="https://github.com/user-attachments/assets/94f80f9a-8b47-45d8-995e-ae752fa36a1f" />
+
 
 ## Multiplication alp  (Direct Memory Mode)
 ```
@@ -134,61 +135,63 @@ ret
 
 ## AND  of 8 bit ALP (Register Mode)
 ```
-mov al,89h
-mov bl,21h 
+mov ax,5d89h
+mov bx,2521h  
 
-AND al,bl
+AND ax,bx
 ret       
 ```
 
 
 
 ## Output  
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b73c628c-bbd4-4740-8cfd-0f32877bc83e" />
+<img width="1920" height="1080" alt="Screenshot (55)" src="https://github.com/user-attachments/assets/ee606f9d-56a0-42d8-bf7b-7491e3d7addc" />
+
 
 ## OR  of 8 bit ALP (Register Mode)
 ```
-mov al,89h
-mov bl,21h 
-
-OR al,bl
-ret       
+ mov ax,5d89h
+ mov bx,2521h 
+ 
+ OR ax,bx
+ ret       
 ```
 
 
 
 ## Output  
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/539442e2-8625-425b-8ba8-becffe2ce9ac" />
+
+<img width="1920" height="1080" alt="Screenshot (56)" src="https://github.com/user-attachments/assets/df71e324-7fd7-4d73-9c54-7acc26a9bfc8" />
 
 
 ## NOT  of 8 bit ALP (Register Mode)
 ```
-mov al,89h
+mov ax,5d89h
 
-NOT al
+NOT ax
 ret      
 ```
 
 
 
 ## Output  
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c6b6b3a5-2826-41dd-bb77-48602d2dcc1d" />
+<img width="1920" height="1080" alt="Screenshot (57)" src="https://github.com/user-attachments/assets/3e141d6c-dd99-43c1-bb41-e2dec4a6694a" />
+
 
 
 ## XOR  of 8 bit ALP (Register Mode)
 ```
-mov al,89h
-mov bl,21h 
+mov ax,5d89h
+mov bx,2521h 
 
-XOR al,bl
+XOR ax,bx
 ret     
 ```
 
 
 
 ## Output  
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/72affe11-bcab-499c-8e24-22cec6241168" />
-
+<img width="1920" height="1080" alt="Screenshot (58)" src="https://github.com/user-attachments/assets/5ec2f58a-9216-4130-bd05-3871eff36729" />
 
 
 ## Result :
