@@ -121,16 +121,15 @@ ret
 
 ## Division alp (Register Indirect Mode)
 ```
-NUM DW 5D89h    
+mov ax,5d89h
+mov bx,[2521h]
+div bx
+ret
 
-MOV BX, OFFSET NUM
-MOV AX, 2521h
-
-DIV WORD PTR [BX]
-ret     
 ```
 ## Output  
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1cf2d621-8a98-4227-b30f-5a62fa7fcd3a" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e62b8b97-4ddc-46a4-b42c-286ecf76b9bd" />
+
 
 
 ## AND  of 16 bit ALP (Register Mode)
